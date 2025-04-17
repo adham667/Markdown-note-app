@@ -1,0 +1,205 @@
+/* General container styling */
+.app-container {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Sidebar styling */
+.sidebar {
+  width: 300px;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+  overflow-y: auto;
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* Add Note button */
+.sidebar button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.buttons{
+  display: flex;
+}
+
+.sidebar button:hover {
+  background-color: #0056b3;
+}
+
+/* File upload section */
+.sidebar div {
+  margin-bottom: 20px;
+}
+
+.sidebar input[type="file"] {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.sidebar input[type="text"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.sidebar div button {
+  margin-right: 10px;
+  padding: 10px 15px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.sidebar div button:hover {
+  background-color: #218838;
+}
+
+.sidebar div button:nth-child(2) {
+  background-color: #dc3545;
+}
+
+.sidebar div button:nth-child(2):hover {
+  background-color: #c82333;
+}
+
+/* Notes list styling */
+.notes-list {
+  list-style: none;
+  padding: 0;
+}
+
+.notes-list li {
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+  margin-bottom: 5px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.notes-list li span {
+  font-size: 1.2rem;
+  color: #333;
+  transition: all 0.3s;
+}
+
+.notes-list li span:hover {
+  color: #007bff;
+
+}
+
+.notes-list li:hover {
+  background-color: #e0e0e0;
+}
+
+.notes-list li.active {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+.notes-list li.active span {
+  color: white;
+}
+.notes-list li.active span:hover {
+  color: #0056b3;
+}
+
+
+
+/* Content area styling */
+
+.header {
+  background-color: #007bff;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+
+.header button{
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  height: fit-content;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.header button:hover {
+  background-color: #c82333;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+
+.grammar-check{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.grammar-check span{
+  display: block;
+  /* font-size: .8rem; */
+  color: #c82333;
+}
+
+
+.content h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #333;
+}
+
+.content p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.content pre,
+.content>div {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
