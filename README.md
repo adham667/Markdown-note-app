@@ -1,6 +1,6 @@
 # 📝 Markdown Note-taking App
 
-A full-stack web application that allows users to upload, view, and save Markdown notes. The app also provides a rendered HTML preview and optional grammar checking. Built using **NestJS** for the backend and **React + Vite** for the frontend.
+A full-stack  web application inspired from (https://roadmap.sh/projects/markdown-note-taking-app) that allows users to upload, view, and save Markdown notes. The app also provides a rendered HTML preview and optional grammar checking. Built using **NestJS** for the backend and **React + Vite** for the frontend.
 
 ## 🚀 Features
 
